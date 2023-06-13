@@ -1,3 +1,4 @@
+import { mock_bills } from "../mock/list";
 
 
 export interface IFantaBill {
@@ -8,6 +9,9 @@ export interface IFantaBill {
   applyUser?: string;
   nextApproveUser?: string;
   ApprovedUser?: string[];
+  amount?: number;
+  originAmount?: number;
+  currency?: string;
   billItems?: IFantaBillItem[];
   tags?: string[]
 }
@@ -15,11 +19,10 @@ export interface IFantaBill {
 export interface IFantaBillItem {
   amount?: number;
   originAmount?: number;
-  currency?: string;
   reason?: string;
   description?: string;
 }
 
 export class FantaPresenter {
-  public list: IFantaBill[] = []
+  public list: IFantaBill[] = mock_bills
 }
