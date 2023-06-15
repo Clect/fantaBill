@@ -1,0 +1,25 @@
+.me-container {
+  .adm-list-item-content-main {
+    display: flex;
+  }
+}
+
+.me-menu-item {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  font-size: 8px;
+
+  .me-menu-item-icon {
+    text-align: center;
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .me-menu-item-title {
+    text-align: center;
+  }
+}

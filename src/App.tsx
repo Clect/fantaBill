@@ -1,15 +1,16 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { FantaPresenter } from './presenter/FantaPresenter';
+import { DevToolPresenter } from './presenter/DevToolPresenter';
+import View from './view';
 import LoginContainer from './login';
 import DevToolContainer from './dev-tool';
 import FantaListContainer from './fanta-list';
 import FantaBillContainer from './fanta-bill';
-import { FantaPresenter } from './presenter/FantaPresenter';
-import { DevToolPresenter } from './presenter/DevToolPresenter';
-import View from './view';
 import FantaDashBoardContainer from './dashboard';
 import FantaPresenterContext from './context/fantaPresenter';
+import MeContainer from './me';
 
 
 
@@ -40,6 +41,16 @@ function App() {
               <View
                 container={
                   <FantaListContainer presenter={presenter} />
+                }
+              ></View>
+            }
+          />
+          <Route
+            path="/me"
+            element={
+              <View
+                container={
+                  <MeContainer />
                 }
               ></View>
             }

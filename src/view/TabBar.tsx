@@ -38,7 +38,7 @@ const FantaTabBar = (props: IFantaTabBarProps) => {
     //     active ? <MessageFill /> : <MessageOutline />,
     // },
     {
-      key: '/personalCenter',
+      key: '/me',
       title: '我的',
       icon: <UserOutline />,
     },
