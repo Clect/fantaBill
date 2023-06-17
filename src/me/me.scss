@@ -8,18 +8,11 @@
   width: 50px;
   height: 50px;
   margin: 5px;
+  padding: 0;
   font-size: 8px;
 
-  .me-menu-item-icon {
-    text-align: center;
-
-    svg {
-      width: 25px;
-      height: 25px;
-    }
-  }
-
   .me-menu-item-title {
+    margin-top: 5px;
     text-align: center;
   }
 }

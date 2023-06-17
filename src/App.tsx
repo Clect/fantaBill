@@ -5,7 +5,6 @@ import { FantaPresenter } from './presenter/FantaPresenter';
 import { DevToolPresenter } from './presenter/DevToolPresenter';
 import View from './view';
 import LoginContainer from './login';
-import DevToolContainer from './dev-tool';
 import FantaListContainer from './fanta-list';
 import FantaBillContainer from './fanta-bill';
 import FantaDashBoardContainer from './dashboard';
@@ -65,17 +64,6 @@ function App() {
               ></View>
             }
           />
-          <Route
-            path="/dev-tool"
-            element={
-              <View
-                container={
-                  <DevToolContainer devToolPresenter={devToolPresenter} />
-                }
-              ></View>
-            }
-          />
-        </Routes>
       </BrowserRouter>
     </FantaPresenterContext.Provider>
   );

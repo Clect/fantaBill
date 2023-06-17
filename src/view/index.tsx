@@ -10,8 +10,8 @@ const View = (props: IViewProps) => {
   
 
   return (
-    <div id='main-view'>
-      <div id="main-container">
+    <div className='main-view'>
+      <div className="main-container">
         {container}
       </div>
       <FantaTabBar />

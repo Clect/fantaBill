@@ -47,7 +47,7 @@ const FantaTabBar = (props: IFantaTabBarProps) => {
   const [activeKey, setActiveKey] = useState(pathname)
 
   return (
-    <div id="main-tab-bar">
+    <div className="main-tab-bar">
       <TabBar
         activeKey={activeKey}
         onChange={(key: string) => {

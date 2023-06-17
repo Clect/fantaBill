@@ -1,21 +1,21 @@
-#main-view {
+.main-view {
   width: 100vw;
   height: 100vh;
   position: relative;
   overflow: hidden;
 }
 
-#main-view p {
+.main-view p {
   margin: 0;
 }
 
-#main-container {
+.main-container {
   width: 100vw;
   height: calc(100vh - 50px);
   overflow: auto;
 }
 
-#main-tab-bar {
+.main-tab-bar {
   position: absolute;
   bottom: 0;
   width: 100%;
